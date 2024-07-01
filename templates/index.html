@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <title>Text Summarizer</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-text">
+            <h1 class="heading">Snap Text</h1>
+            <p class="sub-heading">Retrieve the best summary for your text</p>
+        </div>
+    </div>
+    <form action="/analyze" method="POST" class="form" enctype="multipart/form-data">
+        <h5 class="slidertext">Enter number of lines</h5>
+        <div class="slidecontainer">
+            <input type="range" id="summaryLength" name="summaryLength" class="slider" min="0" max="100" step="1" value="5">
+            <span id="selectedLength">5</span>
+        </div>
+        <textarea name="rawtext" class="form-control", rows="3", placeholder="Enter your raw text"></textarea>
+        <input type="file" name="pdf" accept=".pdf">
+        <button class="button">Submit</button>
+    </form>
+</body>
+<script src="../static/javascript/script.js"></script>
+</html>

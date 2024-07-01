@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/style2.css">
+    <title>Text Summarizer</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-text">
+            <h1 class="heading">Snap Text</h1>
+            <p class="sub-heading">Retrieve the best summary for your text</p>
+        </div>
+    </div>
+    <div class="content">
+        <p class="original">Original Text</p>
+        <p class="summary">Summary</p>
+    </div>
+    <div class="main-content">
+        <div class="original_box">
+            <p class="original-text">{{original_text}}</p>
+            <button class="original-length">Words: {{len_of_orig_text}}</button>
+        </div>
+        <p class="summary1">Summary</p>
+        <div class="summary_box">
+            <p class="summary-text">{{summary}}</p>
+            <button class="summary-length">Words: {{len_summary}}</button>
+        </div>
+    </div>
+</body>
+</html>
